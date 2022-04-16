@@ -1,0 +1,40 @@
+.articleFaune{
+    max-width: 100%;
+}
+.articleFaune{
+    display: flex;
+    justify-content: space-between;
+}
+.articleFaune img{
+    max-width: 100%;
+    height: 380px;
+    flex: 2;
+}
+.articleFaune div {
+    padding: 25px 0 25px 65px;
+    flex: 1;
+}
+.sectionFaune{
+    margin-top: 50px;
+}
+@media screen and (max-width: 1280px) {
+    .articleFaune {
+        display: flex;
+        flex-direction: column;
+    }
+    .articleFaune img{
+        height: 380px;
+        flex: 2;
+        object-fit: cover;
+    }
+    .articleFaune div {
+        padding: 25px 0 25px 25px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .articleFaune img{
+        max-width: 100%;
+        height: 320px;
+        flex: 2;
+    }
+}

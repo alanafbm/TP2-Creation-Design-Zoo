@@ -1,0 +1,93 @@
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    align-content: stretch;
+    background-color: #222;
+    margin:0;
+    /* padding: 1em ; */
+    color:#fff;
+}
+
+nav>* {
+    flex-basis:calc(16%);	
+}
+
+nav a {
+    display: inline-block;
+    width: 100%;
+    background: none;
+    color:#fff;
+    padding: 10px;
+    position: relative;
+    margin: 0 ;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform:uppercase;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.75;
+    letter-spacing: 1px;
+}
+    
+nav a:hover {
+    color: #ca814e;
+    background: none;
+}
+
+.navButoon {
+    background: #572e2e;
+    margin: 0 1em 0 0;
+    border-radius: 8px;
+    padding:10px ;
+}
+
+.navButton:hover {
+    background: #fff;
+    color: #ca814e;
+}
+.navButton {
+    background-color: #ca814e;
+    border-radius: 5px;
+    left: 40px;
+}
+
+div span{
+    font-size: 1.6em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color:#ca814e;
+}
+
+div a:hover span{
+    font-weight: 700;
+    color: #ca814e;
+}
+
+nav div:first-child{
+    text-align: center;
+}
+
+nav div a span{
+    line-height: 1.78em; 
+}
+
+nav div.subMenu {
+    position:relative
+}
+
+nav div.subMenu > div {
+    display: none;
+    position: absolute;
+    padding: 1em 0;
+    width: 100%; 
+    background-color: #222;
+    z-index: 5;
+}
+    
+nav div.subMenu:hover > div {
+    display:block;
+}
+
+

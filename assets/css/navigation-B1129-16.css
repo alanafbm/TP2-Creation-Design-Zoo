@@ -1,0 +1,33 @@
+.firstNav{
+    margin: 0;
+}
+.firstNav a+a,
+.secondNav a+a{
+    margin-left: 50px;
+}
+.firstNav,
+.secondNav{
+    display: flex;
+    justify-content: space-between;
+}
+.firstNav,
+.secondNav{
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.secondNav{
+margin-top: 150px;
+}
+.secondNav div:first-child a:first-child{
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+.secondNav a:hover ,
+.firstNav a:hover{
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+} 

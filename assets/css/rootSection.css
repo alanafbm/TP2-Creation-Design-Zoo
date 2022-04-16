@@ -1,0 +1,38 @@
+.sectionIntro ,
+.sectionSecondaire,
+.sectionPromotion,
+.sectionFaune,
+
+.sectionPortailIntro,
+.sectionPortailAnimaux,
+.sectionParainage,
+
+.sectionficheGalerie,
+.sectionficheDescription,
+.sectionficheExplorez{
+margin-left: auto;
+margin-right: auto;
+padding:  20px 20px;
+}
+
+
+
+
+
+.sectionIntro h2, 
+.sectionSecondaire h2,
+.sectionPromotion h2,
+.sectionFaune h2,
+
+.sectionPortailIntro h2,
+.sectionPortailAnimaux h2,
+.sectionParainage h2,
+
+.sectionficheGalerie h2,
+.sectionficheDescription h2,
+.sectionficheExplorez h2{
+border-bottom: 1px solid rgba(0,0,0,.3);
+padding-bottom: 12.5px;
+} 
+
+

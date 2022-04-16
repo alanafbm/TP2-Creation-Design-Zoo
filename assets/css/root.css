@@ -1,0 +1,252 @@
+:root {
+    --ff-primary: 'Acme', sans-serif;
+    --ff-secondary: 'Cardo', serif;
+    --ff-tertiary: 'Mukta Vaani', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin:  0;
+}
+body{
+   background-color:#d8d3cebc;
+    color: #333;
+    line-height: 1.5625;
+};
+/* rgba(190, 214, 190, 0.74); */
+body>*+*{
+    margin-top: 80px;
+}
+*+p,*+a,*+h1,*+h2,*+h3,*+h4,
+*+span,*+img,*+li,*+ul{
+    margin-top: 20px;
+}
+a{
+    font-family: var(--ff-tertiary);
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    line-height: 1.25;
+}
+p {
+    font-family: var(--ff-tertiary);
+}
+h3{
+    font-size: 1.35em;
+}
+h3, h4, li {
+    font-family: var(--ff-tertiary);
+}
+h1{
+    font-family: var(--ff-tertiary);
+    font-size: 2.3em;
+    border-bottom: 1px solid ;
+    margin-bottom: 50px;
+    letter-spacing: 3px;
+}
+h1, h2, h3, h4 {
+    line-height: 1.25;
+}
+h3,h2,h4{
+    font-weight: 700;
+}
+h4{
+    font-size: 1.2em;
+}
+h4{
+    max-width: 30ch;
+}
+ul{
+    list-style-type: square;
+}
+select{
+    margin-left: 10px;
+    display: inline-block;
+    padding: 0.4125em 0.75em;
+    background-color: rgb(73, 73, 73);
+    color: white; 
+    font-size: 1.1rem;
+}
+.textHero h2{
+    font-family: var(--ff-primary);
+    letter-spacing: 3px;
+    color: white;
+}
+.button {
+    margin-top: 15px;
+    padding: 0.4125em 0.75em;
+    background-color: rgb(73, 73, 73);
+    font-weight: 600;
+    color: white;
+    border-radius: 5px;
+}
+.button:hover{
+    background-color:  #ca814e;
+}
+
+img {
+    border-radius: 5px;
+}
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
+}  
+
+
+@media screen and (max-width: 900px) {
+    /* Banner Hero */
+    .bannerImg {
+        object-fit: cover;
+    }
+    .wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 900px;
+    }
+  
+ 
+  
+ 
+}
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    /* Navigation */
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+    }
+    nav > * {
+        border-top: 1px #333 solid;
+        font-size: 1rem;
+    }
+    nav div:first-child {
+        border-top: none;
+    }
+    nav div:first-child a {
+        text-align: center;
+    }
+    nav a.navButton {
+        width: 220px;
+        order: 3;
+        margin-right: 70px;
+    }
+    nav div.subMenu {
+        flex-basis: calc(50%);
+        order: 2;
+    }
+    nav div.subMenu:active > div {
+        display: block;
+        z-index: 5;
+        padding: 0;
+    }
+    nav div.subMenu>div:active {
+        display: block;
+    }
+ 
+    .bannerImg {
+        object-fit: cover;
+    }
+    .wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 900px;
+    }
+    .textHero{
+        top: 50%;
+        left: 20%;
+        width: 300px;
+        padding-left: 20px;
+        padding-top: 170px;
+    
+
+    }
+    .textHero h3 {
+        font-size: 1em;
+    }
+    .textHero h2 {
+        font-size: 2rem;
+        
+    }
+    .textHero .button {
+        font-size: 1em;
+    }
+    h1 {
+        font-size: 2em;
+    }
+   
+  
+}
+@media screen and (min-width: 375px) and (max-width: 600px) {
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+    }
+    nav > * {
+        border-top: 1px #333 solid;
+        font-size: 1rem;
+    }
+    nav div:first-child {
+        border-top: none;
+    }
+    nav div:first-child a {
+        text-align: center;
+    }
+    nav a.navButton {
+        width: 220px;
+        order: 3;
+        margin-right: 70px;
+    }
+    nav div.subMenu {
+        flex-basis: calc(50%);
+        order: 2;
+    }
+    nav div.subMenu:active > div {
+        display: block;
+        z-index: 5;
+        padding: 0;
+    }
+    nav div.subMenu>div:active {
+        display: block;
+    }
+    .bannerImg {
+        object-fit: cover;
+    }
+    .wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 900px;
+    }
+    .textHero{
+        top: 50%;
+        left: 20%;
+        width: 200px;
+        padding-left: 20px;
+        padding-top: 170px;
+    }
+    .textHero h3 {
+        font-size: 1em;
+    }
+    .textHero h2 {
+        font-size: 1.3em;
+    }
+    .textHero .button {
+        font-size: 1em;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    .textHero {
+        padding-left: 75px;
+    }
+
+
+
+}
